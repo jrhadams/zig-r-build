@@ -1,6 +1,6 @@
 #ZIG_SOURCES := $(shell find . -name '*.zig')
 #ZIG_OBJECTS = $(addsuffix .o,$(basename $(ZIG_SOURCES)))
-ZIG_CFLAGS = -I/usr/share/R/include -lc -fcompiler-rt -fPIC
+ZIG_CFLAGS = -I/usr/share/R/include -lc -fPIC --bundle-compiler-rt
 
 #$(ZIG_OBJECTS): $(ZIG_SOURCES)
 main.o: main.zig
